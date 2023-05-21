@@ -1,4 +1,4 @@
-const Shape = require('../logo-generator/shape.js');
+const Shape = require('../shape');
 
 class Circle {
     constructor(circleCX, circleCY, circleR) {
