@@ -1,3 +1,4 @@
+const { default: inquirer } = require('inquirer');
 const Shape = require('../shape');
 
 class Circle {
@@ -8,5 +9,19 @@ class Circle {
         this.circleR = circleR;
     }
 };
+
+function getCircle() {
+    inquirer
+    .prompt([
+        {
+            type: 'input',
+            message: 'What color would you like for your shape?',
+            name: 'shape color',
+            value: ''
+        }
+    ])
+}
+
+getCircle();
 
 module.exports = Circle;

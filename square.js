@@ -1,3 +1,4 @@
+const { default: inquirer } = require('inquirer');
 const Shape = require('../logo-generator/shape.js');
 
 class Square {
@@ -11,5 +12,19 @@ class Square {
         this.squareYR = squareYR;
     }
 };
+
+function getSquare() {
+    inquirer
+    .prompt([
+        {
+            type: 'input',
+            message: 'What color would you like for your shape?',
+            name: 'shape color',
+            value: ''
+        }
+    ])
+}
+
+getSquare();
 
 module.exports = Square;

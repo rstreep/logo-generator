@@ -1,3 +1,4 @@
+const { default: inquirer } = require('inquirer');
 const Shape = require('../logo-generator/shape.js');
 
 class Triangle {
@@ -8,5 +9,19 @@ class Triangle {
         this.point3 = point3;
     }
 };
+
+function getTriangle() {
+    inquirer
+    .prompt([
+        {
+            type: 'input',
+            message: 'What color would you like for your shape?',
+            name: 'shape color',
+            value: ''
+        }
+    ])
+}
+
+getTriangle();
 
 module.exports = Triangle;
