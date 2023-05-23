@@ -2,11 +2,9 @@ const { default: inquirer } = require('inquirer');
 const Shape = require('../shape');
 
 class Circle {
-    constructor(circleCX, circleCY, circleR) {
-        Shape.call(this, width, height, text, textX, textY, textSize, textAnchor, textFill, stroke, strokeWidth);
-        this.circleCX = circleCX;
-        this.circleCY = circleCY;
-        this.circleR = circleR;
+    constructor(circleFill) {
+        Shape.call(this, text, textFill);
+        this.circleFill = circleFill;
     }
 };
 
