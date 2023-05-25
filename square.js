@@ -3,10 +3,14 @@ const Shape = require('../logo-generator/shape.js');
 
 class Square {
     constructor(squareFill) {
-        Shape.call(this,text, textFill);
+        Shape.call(this, text, textFill);
         this.squareFill = squareFill;
     }
 };
+
+function squareify(){
+    let shapeColor = 
+}
 
 function getSquare() {
     inquirer
@@ -18,6 +22,7 @@ function getSquare() {
             value: ''
         }
     ])
+    .then()
 }
 
 getSquare();

@@ -8,6 +8,12 @@ class Triangle {
     }
 };
 
+function triangleify(){
+    fs.writeFile('triangle.svg', userInput, (err) => 
+    err ? console.error(err) : console.log('Complete')
+    );
+}
+
 function getTriangle() {
     inquirer
     .prompt([

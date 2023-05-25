@@ -8,6 +8,12 @@ class Circle {
     }
 };
 
+function circleify(){
+    fs.writeFile('circle.svg', userInput, (err) => 
+    err ? console.error(err) : console.log('Complete')
+    );
+}
+
 function getCircle() {
     inquirer
     .prompt([
