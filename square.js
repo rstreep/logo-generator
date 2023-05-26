@@ -9,7 +9,7 @@ class Square {
 };
 
 function squareify(){
-    let shapeColor = 
+    let shapeColor = '';
 }
 
 function getSquare() {
